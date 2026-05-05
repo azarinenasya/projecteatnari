@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatnari - Real Meal in a Bite</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eat-orange': '#ff7a3c',
+                        'eat-orange-soft': '#ff996c',
+                        'eat-yellow': '#f6d14c',
+                        'eat-green': '#7e9a4f',
+                    },
+                    fontFamily: {
+                        'jakarta': ['"Plus Jakarta Sans"', 'sans-serif'],
+                        'opensans': ['"Open Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Open Sans', sans-serif; color: #000000; }
+        h1, h2, h3, .nav-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- NAVBAR INTERAKTIF -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo & Brand -->
+            <div class="flex items-center gap-3">
+                <!-- Ganti src dengan logo asli Anda -->
+                <img src="Logo Eatnari.png" alt="Eatnari Logo" class="h-10 w-10 object-contain">
+                <span class="text-2xl font-extrabold tracking-tighter text-eat-orange">EATNARI</span>
+            </div>
+
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center space-x-8 font-bold text-sm uppercase tracking-wider">
+                <a href="#beranda" class="hover:text-eat-orange transition">Beranda</a>
+                <a href="#produk" class="hover:text-eat-orange transition">Produk</a>
+                <a href="#tentang" class="hover:text-eat-orange transition">Tentang Kami</a>
+                <a href="https://s.ub.ac.id/ordereatnarinow" target="_blank" 
+                   class="bg-eat-orange text-white px-6 py-2 rounded-full hover:bg-black transition shadow-lg shadow-orange-200">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION: BERANDA -->
+    <section id="beranda" class="pt-32 pb-20 px-6 bg-[#ffffff]">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-black mb-6">
+                    Real Meal <br><span class="text-eat-orange italic">in a Bite.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Eatnari menghadirkan <b>Inarizushi Multigrain dan Honey-Lime Ocha</b> yang praktis, bergizi, dan mengenyangkan. Solusi makan sehat untuk Anda yang aktif dan produktif.
+                </p>                    
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PRODUK -->
+    <section id="produk" class="py-24 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-extrabold mb-4 text-black">Menu Pilihan</h2>
+                <div class="w-24 h-1 bg-eat-yellow mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                
+                <!-- KATEGORI 1: INARIZUSHI (MAKANAN) -->
+                <div class="bg-white rounded-[3rem] shadow-xl overflow-hidden border-2 border-eat-orange flex flex-col" data-aos="fade-right">
+                    <!-- Foto Utama Inarizushi -->
+                    <div class="h-64 overflow-hidden">
+                        <img src="Contoh Eatnari.jpeg" alt="Inarizushi Eatnari" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <div class="p-10 flex-1">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-3xl font-extrabold text-eat-orange">Inarizushi</h3>
+                            <span class="bg-eat-yellow text-xs font-bold px-3 py-1 rounded-full uppercase">Signature</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Nasi multigrain bergizi yang dibungkus dalam kulit tahu (aburaage) dengan tekstur lembut dan rasa yang seimbang. Tersedia dalam 3 varian rasa favorit:
+                        </p>
+                        
+                        <!-- Poin-Poin Varian -->
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 group">
+                                <div class="w-2 h-2 bg-eat-orange rounded-full group-hover:scale-150 transition"></div>
+                                <span class="font-bold text-gray-800">Mexican Chicken</span>
+                            </li>
+                            <li class="flex items-center gap-3 group">
+                                <div class="w-2 h-2 bg-eat-orange-soft rounded-full group-hover:scale-150 transition"></div>
+                                <span class="font-bold text-gray-800">Egg Mayo</span>
+                            </li>
+                            <li class="flex items-center gap-3 group">
+                                <div class="w-2 h-2 bg-eat-yellow rounded-full group-hover:scale-150 transition"></div>
+                                <span class="font-bold text-gray-800">Sesame Chicken Salad</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- KATEGORI 2: MINUMAN -->
+                <div class="bg-white rounded-[3rem] shadow-xl overflow-hidden border-2 border-eat-green flex flex-col" data-aos="fade-left">
+                    <!-- Foto Ocha -->
+                    <div class="h-64 overflow-hidden bg-eat-green/10">
+                        <img src="Contoh Ocha.jpeg" alt="Honey-Lime Ocha" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    
+                    <div class="p-10 flex-1">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-3xl font-extrabold text-eat-green uppercase">Ice Ocha</h3>
+                            <span class="bg-eat-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Refreshing</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Teh hijau Jepang murni yang disajikan dingin. Pendamping sempurna untuk menetralkan rasa setelah menikmati gurihnya Inarizushi.
+                        </p>
+                        
+                        <!-- Detail Minuman -->
+                        <div class="bg-eat-green/5 p-4 rounded-2xl border border-eat-green/20">
+                            <p class="text-sm text-eat-green font-semibold">
+                                <span class="mr-2">🍃</span> 100% Brewed Green Tea
+                            </p>
+                            <p class="text-sm text-eat-green font-semibold mt-1">
+                                <span class="mr-2">🧊</span> Served with Ice/Iceless
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: TENTANG KAMI -->
+    <section id="tentang" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Filosofi Logo -->
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-extrabold mb-8 text-eat-orange">Filosofi Logo</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-eat-yellow rounded-full flex-shrink-0 flex items-center justify-center font-bold">1</div>
+                            <p class="text-gray-600"><b>Bentuk Inari:</b> Ilustrasi visual utama yang merepresentasikan produk inti Eatnari.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-eat-orange rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white">2</div>
+                            <p class="text-gray-600"><b>Multigrain:</b> Melambangkan nilai kesehatan dan inovasi nutrisi tinggi serat.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-eat-green rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white">3</div>
+                            <p class="text-gray-600"><b>Angka Enam (六):</b> Menghargai dedikasi enam anggota tim pendiri Eatnari.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-black rounded-full flex-shrink-0 flex items-center justify-center font-bold text-white">4</div>
+                            <p class="text-gray-600"><b>Smiley Face:</b> Simbol kebahagiaan dan kepuasan pelanggan di setiap gigitan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visi Misi -->
+                <div class="bg-eat-orange p-10 rounded-[3rem] text-white" data-aos="fade-left">
+                    <h2 class="text-3xl font-extrabold mb-6 border-b border-white pb-4">Visi & Misi</h2>
+                    <div class="mb-8">
+                        <h4 class="text-eat-yellow font-bold uppercase tracking-widest text-sm mb-2">Visi</h4>
+                        <p class="text-lg">"Menjadi brand terkemuka dalam pengalaman kuliner on-the-go yang sehat, beragam secara budaya, dan praktis."</p>
+                    </div>
+                    <div>
+                        <h4 class="text-eat-yellow font-bold uppercase tracking-widest text-sm mb-2">Misi</h4>
+                        <ul class="list-disc list-inside space-y-2 opacity-90">
+                            <li>Menghadirkan makanan bernutrisi tinggi serat.</li>
+                            <li>Menggunakan bahan baku lokal berkualitas premium.</li>
+                            <li>Menjamin keamanan pangan dan kualitas rasa yang konsisten.</li>
+                            <li>Memberikan pelayanan terbaik bagi kepuasan pelanggan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / PESAN SEKARANG -->
+    <footer class="bg-black text-white py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-6" data-aos="zoom-in">Dapatkan Eatnari Sekarang!</h2>
+            <p class="text-gray-400 mb-10 italic" data-aos="zoom-in">"Bite, Smile, Repeat."</p>
+            <a href="https://s.ub.ac.id/ordereatnarinow" target="_blank" 
+               class="inline-block bg-eat-orange text-white px-12 py-5 rounded-2xl font-black text-xl hover:bg-eat-yellow hover:text-black transition-all hover:scale-105 shadow-2xl">
+                KLIK DISINI UNTUK ORDER
+            </a>
+            <div class="mt-20 pt-8 border-t border-gray-800 text-sm text-gray-500">
+                &copy; 2026 Tim Eatnari - Universitas Brawijaya.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
