@@ -63,17 +63,36 @@
         </div>
     </nav>
 
-    <!-- SECTION: BERANDA -->
-    <section id="beranda" class="pt-32 pb-20 px-6 bg-[#ffffff]">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2" data-aos="fade-right">
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-black mb-6">
-                    Real Meal <br><span class="text-eat-orange italic">in a Bite.</span>
+   <!-- SECTION: BERANDA (REVISI CONTAINER DESKTOP) -->
+    <section id="beranda" class="pt-32 pb-16 md:pt-48 md:pb-32 px-6">
+        <!-- Wrapper Utama: max-w-6xl untuk menjaga margin kanan-kiri di layar lebar -->
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Box Konten: Di desktop (lg) kita batasi lebarnya hanya 60-70% dari layar -->
+            <div class="w-full lg:w-2/3 text-left" data-aos="fade-right">
+                
+                <!-- Judul Utama: Penyesuaian ukuran font dan spasi antar baris -->
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] md:leading-[1.05] tracking-tighter mb-8">
+                    Real Meal <br>
+                    <span class="text-eat-orange italic inline-block mt-2">in a Bite.</span>
                 </h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    Eatnari menghadirkan <b>Inarizushi Multigrain dan Honey-Lime Ocha</b> yang praktis, bergizi, dan mengenyangkan. Solusi makan sehat untuk Anda yang aktif dan produktif.
-                </p>                    
+                
+                <!-- Deskripsi: Kita beri max-w-xl agar teks tidak melar ke samping -->
+                <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-xl leading-relaxed">
+                    Eatnari menghadirkan <strong class="text-black">Inarizushi Multigrain dan Honey-Lime Ocha</strong> yang praktis, bergizi, dan mengenyangkan. Solusi makan sehat untuk Anda yang aktif dan produktif.
+                </p>
+                
+                <!-- Tombol CTA -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#produk" class="bg-eat-green text-white px-10 py-4 rounded-2xl font-bold text-center hover:bg-black transition shadow-xl shadow-green-100">
+                        Lihat Menu
+                    </a>
+                    <a href="#tentang" class="border-2 border-eat-orange text-eat-orange px-10 py-4 rounded-2xl font-bold text-center hover:bg-eat-orange hover:text-white transition">
+                        Kenali Kami
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
